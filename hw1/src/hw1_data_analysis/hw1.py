@@ -78,9 +78,10 @@ missing_2016 = df_2016[df_2016['Total (East + West) bicycle count'].isnull()]
 
 # Prints missing date and hour.
 missing_2016['Date']
+# There's only one time point missing from the 2016 subset at `30181   2016-03-13 02:00:00`.
 
-# There's only one missing row from the 2016 subset at `30181   2016-03-13 02:00:00`.
-
+# Dropping any NA rows. 
+df_2016 = df_2016.dropna(subset=['Total (East + West) bicycle count'])
 
 
 # 6. For the dataframe you created in 4, use pandas + matplotlib to plot the counts by hour (i.e. hour of the day on the x-axis, total daily counts on the y-axis). Add an appropriate title and name the axes and save the image to a file called counts_by_hour.png. (1pt)
