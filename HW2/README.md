@@ -140,3 +140,5 @@ Create another branch called feature and push that to the remote. Also reset you
 5. `git checkout feature` : moved the head from (C1) o/main to (C2) o/feature
 
 
+## AI Attestation
+Proudly enough, I didn't use an AI assist on this one! I struggled on this one a lot.
